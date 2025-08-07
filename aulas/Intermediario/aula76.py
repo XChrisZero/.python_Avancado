@@ -102,6 +102,15 @@ print(p1.get('sobrenome', 'Chave não encontrada'))  # Retorna uma mensagem pers
 # Exemplo do update
 p1.update({'altura': 1.8, 'cidade': 'São Paulo'})  # Adiciona novas chaves e valores
 print(p1)  # O dicionário agora contém as novas chaves e valores
+'''
+p1.update(nome='Chris', sobrenome='Ferrari')  # Atualiza ou adiciona chaves
+
+tupla = (('nome', 'novo_nome'), ('sobrenome', 'novo_sobrenome'))
+p1.update(tupla)  # Atualiza ou adiciona chaves a partir de uma tupla
+
+lista = [['nome', 'novo_nome'], ['sobrenome', 'novo_sobrenome']]
+p1.update(lista)  # Atualiza ou adiciona chaves a partir de uma lista
+'''
 
 # Exemplo do fromkeys
 novas_chaves = ['a', 'b', 'c']
