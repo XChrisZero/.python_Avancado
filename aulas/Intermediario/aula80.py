@@ -30,17 +30,17 @@ def primeiro_Duplicado(list_int):
     num_check = set()
     first_doble = 'not in'
 
-    for numero in list_int:
-        if numero in num_check:
-            first_doble = numero
+    for number in list_int:
+        if number in num_check:
+            first_doble = number
             break
-        num_check.add(numero)
+        num_check.add(number)
 
     print( )
     return first_doble
 
-for lista in lista_de_listas_de_inteiros:
+for list in lista_de_listas_de_inteiros:
     print(
-        lista,
-        primeiro_Duplicado( lista )
+        list,
+        primeiro_Duplicado( list )
     )
