@@ -11,7 +11,7 @@ import copy
 
 novos_produtos = [
     { **p, 'preco': p['preco'] * 1.10 } #round para arredondar o valor
-    for p in copy.deepcopy(produtos)
+    for p in copy.deepcopy(produtos) #produtos[:] também funciona
 
 ]
 
@@ -27,7 +27,7 @@ produtos_ordenados_por_preco.sort(
 )
 
 print('Produtos originais:')
-print(*produtos, sep='\n')
+print(*produtos, sep='\n') #* para desempacotar a lista
 print()
 print('Novos produtos com 10% de aumento:')
 print(*novos_produtos, sep='\n')
