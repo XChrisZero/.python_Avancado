@@ -4,3 +4,4 @@ from exercicios.exercicio_101 import criar_funcao, soma, multiplica
 
 from exercicios.exercicio_107 import list1, list2, zipping
 
+from exercicios.exercicio_a import lista_a, lista_b, lista_soma
