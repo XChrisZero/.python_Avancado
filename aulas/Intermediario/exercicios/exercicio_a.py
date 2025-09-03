@@ -21,5 +21,5 @@ for i in range(len(lista_b)):
 
 
 lista_soma3 = [] # Usando loop for com enumerate
-for i, _ in enumerate(lista_b):
+for i, _ in enumerate(lista_b): # _ é usado quando não precisamos do valor, apenas do índice
     lista_soma3.append(lista_a[i] + lista_b[i])
