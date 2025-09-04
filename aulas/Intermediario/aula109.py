@@ -9,7 +9,6 @@ def print_iter(iterator): # imprime iteradores
     print(*list(iterator), sep='\n')
     print()
 
-
 pessoas = [
     'João', 'Joana', 'Luiz', 'Letícia',
 ]
