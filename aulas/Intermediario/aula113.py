@@ -1,6 +1,7 @@
 # reduce - faz a redução de um iterável em um valor
 from functools import reduce
 
+# Imagine que você tem uma lista de produtos e quer saber o total da compra
 produtos = [
     {'nome': 'Produto 5', 'preco': 10},
     {'nome': 'Produto 1', 'preco': 22},
@@ -9,7 +10,7 @@ produtos = [
     {'nome': 'Produto 4', 'preco': 4},
 ]
 
-
+# Como funciona o reduce sem usar o reduce
 # def funcao_do_reduce(acumulador, produto):
 #     print('acumulador', acumulador)
 #     print('produto', produto)
@@ -17,10 +18,11 @@ produtos = [
 #     return acumulador + produto['preco']
 
 
-total = reduce(
-    lambda ac, p: ac + p['preco'],
+# Usando o reduce e uma função lambda
+total = reduce( 
+    lambda acumulador, produto: acumulador + produto['preco'], # funcao_do_reduce,
     produtos,
-    0
+    0 # valor inicial do acumulador
 )
 
 print('Total é', total)
