@@ -77,7 +77,7 @@ def sair():
 
 
 # Caminho do arquivo JSON para salvar as tarefas
-CAMINHO_ARQUIVO = 'aula119.json'
+CAMINHO_ARQUIVO = 'exercicio_119.json'
 
 # Listas para armazenar as tarefas e as tarefas desfeitas
 tarefas = ler([], CAMINHO_ARQUIVO)
