@@ -15,7 +15,7 @@ class Caneta:
     @property # para usar um getter, tem que ter o decorador @property
     def cor(self): # getter
         print('ESTOU NO GETTER')
-        return self._cor # atributo protegido
+        return self._cor # atributo protegido (por convenção)
 
     @cor.setter # para usar um setter, tem que ter o decorador @<nome do atributo>.setter
     def cor(self, valor): # setter
