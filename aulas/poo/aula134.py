@@ -12,28 +12,28 @@ class Escritor:
         self.nome = nome
         self._ferramenta = None
 
-    @property
-    def ferramenta(self):
+    @property # getter
+    def ferramenta(self): 
         return self._ferramenta
 
-    @ferramenta.setter
+    @ferramenta.setter # setter
     def ferramenta(self, ferramenta):
         self._ferramenta = ferramenta
 
 
-class FerramentaDeEscrever:
+class FerramentaDeEscrever: # classe
     def __init__(self, nome):
         self.nome = nome
 
-    def escrever(self):
-        return f'{self.nome} está escrevendo'
+    def escrever(self):# método
+        return f'{self.nome} está escrevendo' 
 
 
-escritor = Escritor('Luiz')
-caneta = FerramentaDeEscrever('Caneta Bic')
-maquina_de_escrever = FerramentaDeEscrever('Máquina')
-escritor.ferramenta = maquina_de_escrever
+escritor = Escritor('Luiz') # associação
+caneta = FerramentaDeEscrever('Caneta Bic')  # associação
+maquina_de_escrever = FerramentaDeEscrever('Máquina') # associação
+escritor.ferramenta = maquina_de_escrever # associação
 
-print(caneta.escrever())
-print(maquina_de_escrever.escrever())
-print(escritor.ferramenta.escrever())
+print(caneta.escrever()) # associação
+print(maquina_de_escrever.escrever()) # associação
+print(escritor.ferramenta.escrever()) # associação
