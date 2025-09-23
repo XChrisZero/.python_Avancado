@@ -20,9 +20,13 @@ class Foo:
         self._protected = 'isso é protegido' # não DEVE ser usado fora da classe
         self.__private = 'isso é privado' # só DEVE ser usado na classe em que foi declarado
 
+        self.__metodo_private() # ok, pode ser usado na classe
+        self._metodo_protected() # ok, pode ser usado na classe
+
     def metodo_publico(self): # pode ser usado em qualquer lugar
         print(self.public)
         return 'metodo_publico'
+    
 
     def _metodo_protected(self): # não DEVE ser usado fora da classe
         print(self._protected)
