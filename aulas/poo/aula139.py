@@ -14,7 +14,7 @@
 # string = MinhaString('Luiz')
 # print(string.upper())
  
-class A(object): # Herda de object
+class A(object): # Herda de object (padrão  do Python)
     atributo_a = 'valor a'
 
     def __init__(self, atributo): # Construtor
@@ -28,7 +28,7 @@ class B(A): # Herda de A
     atributo_b = 'valor b'
 
     def __init__(self, atributo, outra_coisa): # Construtor
-        super().__init__(atributo)
+        super().__init__(atributo) # super() sem parâmetros chama a super classe imediata (A)
         self.outra_coisa = outra_coisa
 
     def metodo(self): # Método
@@ -40,7 +40,7 @@ class C(B): # Herda de B
 
     def __init__(self, *args, **kwargs): # Construtor
         # print('EI, burlei o sistema.')
-        super().__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs) # super() sem parâmetros chama a super classe imediata (B)
 
     def metodo(self): # Método
         # super().metodo()  # B
