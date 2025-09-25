@@ -8,3 +8,11 @@
 
 (LogFileMixin): Logando... Success: Deu bom familia!.
 
+(Smartphone): Logando... Success: iPhone 17 foi ligado com sucesso..
+
+(Smartphone): Logando... Success: Galaxy S25 foi ligado com sucesso..
+
+(Smartphone): Logando... Error: iPhone 17 foi desligado com sucesso..
+
+(Smartphone): Logando... Error: Galaxy S25 foi desligado com sucesso..
+
