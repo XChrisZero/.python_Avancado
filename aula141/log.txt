@@ -1,0 +1,10 @@
+(LogFileMixin): Logando... Success: Deu bom familia!.
+
+(LogFileMixin): Logando... Error: Mio familia!.
+
+(LogFileMixin): Logando... Success: Deu bom familia!.
+
+(LogFileMixin): Logando... Error: Mio familia!.
+
+(LogFileMixin): Logando... Success: Deu bom familia!.
+
