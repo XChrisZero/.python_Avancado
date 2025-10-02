@@ -26,8 +26,8 @@ def meu_repr(self):
     return f'{type(self).__name__}({self.__dict__})'
 
 
-class Meta(type):
-    def __new__(mcs, name, bases, dct):
+class Meta(type): # Sempre herda de type
+    def __new__(mcs, name, bases, dct): # Sempre recebe a metaclass como primeiro argumento
         print('METACLASS NEW')
         cls = super().__new__(mcs, name, bases, dct)
         cls.attr = 1234
@@ -39,7 +39,7 @@ class Meta(type):
 
         return cls
 
-    def __call__(cls, *args, **kwargs):
+    def __call__(cls, *args, **kwargs): # Sempre recebe a classe como primeiro argumento
         instancia = super().__call__(*args, **kwargs)
 
         if 'nome' not in instancia.__dict__:
@@ -48,19 +48,22 @@ class Meta(type):
         return instancia
 
 
-class Pessoa(metaclass=Meta):
+class Pessoa(metaclass=Meta): # , falar=None
     # falar = 123
 
-    def __new__(cls, *args, **kwargs):
+# metodo que cria a instância 
+    def __new__(cls, *args, **kwargs): # Sempre recebe a classe como primeiro argumento
         print('MEU NEW')
         instancia = super().__new__(cls)
         return instancia
 
-    def __init__(self, nome):
+# metodo construtor
+    def __init__(self, nome): # Sempre recebe a instância como primeiro argumento
         print('MEU INIT')
         # self.nome = nome
-
-    def falar(self):
+ 
+ # metodo de instância
+    def falar(self): # Sempre recebe a instância como primeiro argumento
         print('FALANDO...')
 
 
