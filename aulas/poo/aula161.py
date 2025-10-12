@@ -12,24 +12,30 @@ class MyList(Sequence):
         self._index = 0
         self._next_index = 0
 
-    def append(self, *values):
+    def append(self, *values): # aceita um ou mais valores
+        print('adicionando um único elemento ao final de uma lista existente...', values)
         for value in values:
             self._data[self._index] = value
             self._index += 1
 
-    def __len__(self) -> int:
+    def __len__(self) -> int: # retorna o tamanho da lista
+        print('comprimento da lista')
         return self._index
 
-    def __getitem__(self, index):
+    def __getitem__(self, index): # retorna o item na posição index
+        print('GET ITEM:', index)
         return self._data[index]
 
-    def __setitem__(self, index, value):
+    def __setitem__(self, index, value): # define o item na posição index
+        print('SET ITEM:', index, value)
         self._data[index] = value
 
-    def __iter__(self):
+    def __iter__(self): # retorna o iterador (ele mesmo)
+        print('ITERANDO...')    
         return self
 
-    def __next__(self):
+    def __next__(self): # retorna o próximo valor
+        print('NEXT...')
         if self._next_index >= self._index:
             self._next_index = 0
             raise StopIteration
@@ -38,7 +44,7 @@ class MyList(Sequence):
         self._next_index += 1
         return value
 
-
+# Testando a classe MyList
 if __name__ == '__main__':
     lista = MyList()
     lista.append('Maria', 'Helena')
