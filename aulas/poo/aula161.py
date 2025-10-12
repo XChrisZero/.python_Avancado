@@ -43,9 +43,9 @@ class MyList(Sequence):
         value = self._data[self._next_index]
         self._next_index += 1
         return value
-
+    
 # Testando a classe MyList
-if __name__ == '__main__':
+def main():
     lista = MyList()
     lista.append('Maria', 'Helena')
     lista[0] = 'João'
@@ -58,3 +58,7 @@ if __name__ == '__main__':
     for item in lista:
         print(item)
     print('---')
+
+
+if __name__ == '__main__':
+    main()
