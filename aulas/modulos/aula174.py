@@ -1,3 +1,11 @@
+# os + shutil - Apagando, copiando, movendo e renomeando pastas com Python
+# Vamos copiar arquivos de uma pasta para outra.
+# Copiar -> shutil.copy
+# Copiar Árvore recursivamente -> shutil.copytree
+# Apagar Árvore recursivamente -> shutil.rmtree
+# Apagar arquivos -> os.unlink
+# Renomear/Mover -> shutil.move ou os.rename
+
 import os
 import shutil
 
@@ -14,3 +22,7 @@ print(PASTA_ORIGINAL)
 shutil.rmtree(NOVA_PASTA, ignore_errors=True) # ignore_errors=True faz não dar erro se a pasta não existir
 
 shutil.copytree(PASTA_ORIGINAL, NOVA_PASTA) # Copia a pasta inteira de um lugar para outro
+
+# shutil.move(NOVA_PASTA, NOVA_PASTA + '_EITA') # Move ou renomeia a pasta
+#shutil.move(NOVA_PASTA, NOVA_PASTA.replace('NOVA_PASTA', 'NOVA_PASTA_2')) # Move ou renomeia a pasta
+#os.rename(NOVA_PASTA, NOVA_PASTA.replace('NOVA_PASTA', 'NOVA_PASTA_2')) # Move ou renomeia a pasta
