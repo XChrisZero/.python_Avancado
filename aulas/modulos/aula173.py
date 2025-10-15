@@ -25,3 +25,8 @@ for root, dirs, files, in os.walk(PASTA_ORIGINAL):
         caminho_novo_arquivo = os.path.join(
             root.replace(PASTA_ORIGINAL, NOVA_PASTA), file) #replace substitui a parte do caminho antigo pelo novo
         shutil.copy(caminho_arquivo, caminho_novo_arquivo) #copia o arquivo de um lugar para outro 
+
+
+
+
+### shutil.copytree(PASTA_ORIGINAL, NOVA_PASTA) # Copia a pasta inteira de um lugar para outro de uma vez só
