@@ -5,8 +5,7 @@ import os
 import shutil
 
 HOME = os.path.expanduser('~') # Expande o caminho do usuário
-API_ = os.path.join(HOME, 'OneDrive', 'Documentos', 'Projetos', 'api_' ) # join Junta os caminhos
-PASTA_ORIGINAL = os.path.join(HOME, 'OneDrive', 'Documentos', 'Projetos', 'transacao_api' )
+PASTA_ORIGINAL = os.path.join(HOME, 'OneDrive', 'Documentos', 'Projetos', 'transacao_api' )# join Junta os caminhos
 NOVA_PASTA = os.path.join(HOME, 'OneDrive', 'Documentos', 'Projetos', 'NOVA_PASTA')
 
 print(NOVA_PASTA)
