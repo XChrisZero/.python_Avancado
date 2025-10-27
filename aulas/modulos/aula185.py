@@ -6,9 +6,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from string import Template
 
-from dotenv import load_dotenv  
+#from dotenv import load_dotenv  
 
-load_dotenv()
+#load_dotenv()
 
 # Caminho arquivo HTML
 CAMINHO_HTML = pathlib.Path(__file__).parent / 'aula185.html'
