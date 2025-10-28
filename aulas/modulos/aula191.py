@@ -14,3 +14,5 @@ print(response.status_code)
 # print(response.content)
 # print(response.json())
 print(response.text)
+
+# python -m http.server -d ./aulas/modulos 8000
