@@ -1,13 +1,13 @@
 {
   "window.zoomLevel": 1,
   "editor.fontSize": 18,
-  "editor.hover.enabled": true,
+  "editor.hover.enabled": "on",
   "workbench.startupEditor": "none",
   "explorer.compactFolders": false,
   "terminal.integrated.fontSize": 19,
   "editor.rulers": [80, 120],
   "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
   "code-runner.executorMap": {
     "python": "clear ; python -u"
   },
@@ -39,8 +39,7 @@
   "python.linting.mypyEnabled": true,
   "python.testing.unittestEnabled": false,
   "python.testing.pytestEnabled": true,
-  "python.analysis.diagnosticSeverityOverrides": {},
-  // "python.defaultInterpreterPath": "./venv/bin/python",
+  // "python.defaultInterpreterPath": "./.venv/bin/python",
   "python.analysis.typeCheckingMode": "basic",
   "cSpell.enabled": false
 }

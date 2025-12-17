@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: PY
+Version: 0.0.1
+Summary: PY description
+Author-email: Christian <christiankuriakchungferrari@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://example.org
+Requires-Python: >=3.14
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv>=1.1.0
+Provides-Extra: dev
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: pyright; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
